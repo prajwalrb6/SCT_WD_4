@@ -1,0 +1,62 @@
+/* style.css */
+body {
+  font-family: Arial;
+  background: #1e1e2f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.container {
+  background: #292945;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="datetime-local"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+ 
+button {
+  padding: 10px;
+  border: none;
+  background: #00bfa6;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li {
+  background: #3a3a5a;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+li button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
